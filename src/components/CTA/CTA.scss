@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+
+.cta {
+  background: $secondary-color;
+  padding: 100px 0;
+
+  &__inner {
+    text-align: center;
+    max-width: 720px;
+    margin-inline: auto;
+
+    h2 {
+      color: $white;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    background: $primary-color;
+    color: $white;
+    padding: 18px 40px;
+    border-radius: 999px;
+    transition: $transition;
+
+    &:hover {
+      transform: translateY(-4px);
+      background: $primary-dark;
+    }
+  }
+}

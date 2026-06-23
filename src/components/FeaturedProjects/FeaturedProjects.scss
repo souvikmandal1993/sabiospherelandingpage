@@ -1,0 +1,131 @@
+@use "../../styles/variables" as *;
+
+.projects {
+  background: #f8f6f1;
+
+  &__grid {
+    display: grid;
+
+    grid-template-columns:
+      repeat(
+        3,
+        1fr
+      );
+
+    gap: 35px;
+  }
+}
+
+.project-card {
+  background: white;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.05);
+
+  transition: box-shadow 0.5s ease;
+
+  &:hover {
+    box-shadow:
+      0 20px 40px
+      rgba(0, 0, 0, 0.12);
+  }
+
+  &__image {
+    overflow: hidden;
+
+    position: relative;
+
+    img {
+      width: 100%;
+
+      height: 450px;
+
+      object-fit: cover;
+
+      transition:
+        transform 0.8s ease;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.25),
+        transparent 60%
+      );
+
+      opacity: 0;
+
+      transition: opacity 0.5s ease;
+    }
+  }
+
+  &:hover &__image img {
+    transform: scale(1.08);
+  }
+
+  &:hover &__image::after {
+    opacity: 1;
+  }
+
+  &__content {
+    padding: 30px;
+
+    span {
+      color: $primary-color;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      font-size: 0.8rem;
+
+      display: inline-block;
+
+      transition: transform 0.4s ease;
+    }
+
+    h3 {
+      margin-top: 10px;
+
+      margin-bottom: 12px;
+
+      font-size: 2rem;
+    }
+
+    p {
+      color: $text-light;
+    }
+  }
+
+  &:hover &__content span {
+    transform: translateX(4px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects__grid {
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns:
+      1fr;
+  }
+}

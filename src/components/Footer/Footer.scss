@@ -1,0 +1,56 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  background: $secondary-color;
+  padding: 70px 0 30px;
+  color: rgba(255, 255, 255, 0.7);
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__brand {
+    h3 {
+      font-size: 1.8rem;
+      color: $white;
+      margin-bottom: 14px;
+    }
+
+    p {
+      max-width: 320px;
+      line-height: 1.7;
+    }
+  }
+
+  &__nav,
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    a {
+      transition: $transition;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 24px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

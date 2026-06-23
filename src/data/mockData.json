@@ -1,0 +1,191 @@
+{
+  "brand": {
+    "name": "Sabiosphere",
+    "tagline": "Shape Your Space, Shape Your Life.",
+    "founder": "Mansi Rajgarhia",
+    "founderTitle": "Founder & Principal Designer",
+    "founded": 2019,
+    "location": "Gurugram, India"
+  },
+
+  "nav": {
+    "items": [
+      { "label": "About", "href": "#about" },
+      { "label": "Services", "href": "#services" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Process", "href": "#process" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": "Book Consultation"
+  },
+
+  "hero": {
+    "eyebrow": "Luxury Interior Design Studio",
+    "title": "Shape Your Space,\nShape Your Life.",
+    "subtitle": "Sabiosphere crafts sophisticated residential and commercial interiors that balance beauty, function and emotion — designed around the way you actually live.",
+    "primaryButton": "Book Consultation",
+    "secondaryButton": "View Projects",
+    "backgroundImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80",
+    "backgroundVideo": "https://videos.pexels.com/video-files/3773486/3773486-hd_1920_1080_30fps.mp4"
+  },
+
+  "about": {
+    "label": "About Us",
+    "title": "Designing Elegant Spaces With Purpose & Precision",
+    "description": "Great design begins with listening. Since 2019, Sabiosphere has stayed deeply involved in every project from first sketch to final handover, blending architecture, interiors and sustainability into timeless living experiences that tell a story and evoke emotion.",
+    "founderQuote": "Great design begins with listening. I stay deeply involved from start to finish, so every space we create genuinely reflects the people who live in it.",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80"
+  },
+
+  "services": {
+    "label": "What We Do",
+    "title": "Services Tailored To Your Vision",
+    "items": [
+      {
+        "id": 1,
+        "title": "Residential Design",
+        "description": "Bespoke homes, villas and apartments designed around how you actually live.",
+        "icon": "home"
+      },
+      {
+        "id": 2,
+        "title": "Commercial Design",
+        "description": "Offices, wellness centres and F&B spaces built to elevate every visit.",
+        "icon": "building"
+      },
+      {
+        "id": 3,
+        "title": "Renovation",
+        "description": "Reimagining existing spaces with new layouts, finishes and life.",
+        "icon": "tool"
+      },
+      {
+        "id": 4,
+        "title": "Procurement Service",
+        "description": "End-to-end sourcing of furniture, fixtures and finishes, handled for you.",
+        "icon": "package"
+      }
+    ]
+  },
+
+  "process": {
+    "label": "How We Work",
+    "title": "A Process Built On Clarity",
+    "steps": [
+      { "step": "01", "title": "Site Meeting", "description": "We visit your space to understand the brief, the site and your lifestyle." },
+      { "step": "02", "title": "Concept Discussion", "description": "Moodboards and concepts that translate your brief into a design direction." },
+      { "step": "03", "title": "Design Refinement", "description": "Detailed layouts, materials and finishes refined with your feedback." },
+      { "step": "04", "title": "Execution", "description": "On-ground execution managed closely to match the approved design." },
+      { "step": "05", "title": "Handover", "description": "A final walkthrough and styling before the space becomes yours." }
+    ]
+  },
+
+  "stats": [
+    { "number": 50, "suffix": "+", "label": "Projects Delivered" },
+    { "number": 100, "suffix": "%", "label": "Client Satisfaction" },
+    { "number": 7, "suffix": "+", "label": "Years of Experience" },
+    { "number": 12, "suffix": "+", "label": "Cities Served" }
+  ],
+
+  "projects": {
+    "label": "Portfolio",
+    "title": "Featured Projects",
+    "items": [
+      {
+        "id": 1,
+        "title": "Serene Villa",
+        "location": "Gurugram",
+        "category": "Residential",
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": 2,
+        "title": "The Wellness Collective",
+        "location": "Delhi",
+        "category": "Commercial",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": 3,
+        "title": "Skyline Penthouse",
+        "location": "Noida",
+        "category": "Residential",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": 4,
+        "title": "Atelier Cafe",
+        "location": "Gurugram",
+        "category": "F&B",
+        "image": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": 5,
+        "title": "Maple Residence",
+        "location": "Chandigarh",
+        "category": "Residential",
+        "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": 6,
+        "title": "Lumen Workspace",
+        "location": "Delhi",
+        "category": "Commercial",
+        "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+
+  "testimonials": {
+    "label": "Client Stories",
+    "title": "Spaces, In Their Words",
+    "items": [
+      {
+        "id": 1,
+        "name": "Riya Kapoor",
+        "role": "Homeowner, Gurugram",
+        "quote": "Sabiosphere understood our family before they drew a single line. The home feels like us, only better.",
+        "avatar": "https://i.pravatar.cc/150?img=47"
+      },
+      {
+        "id": 2,
+        "name": "Arjun Malhotra",
+        "role": "Founder, The Wellness Collective",
+        "quote": "Every detail, from light to layout, was considered. Our clients comment on the space before they even sit down.",
+        "avatar": "https://i.pravatar.cc/150?img=12"
+      },
+      {
+        "id": 3,
+        "name": "Neha & Sameer",
+        "role": "Homeowners, Noida",
+        "quote": "Calm, clear communication through every stage of a renovation that could have been stressful. It wasn't, even once.",
+        "avatar": "https://i.pravatar.cc/150?img=32"
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Have A Space In Mind?",
+    "subtitle": "Tell us about your project and let's shape something timeless together.",
+    "button": "Start Your Project"
+  },
+
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Let's Start Your Project",
+    "description": "Share a few details about your space and we'll get back to you within 2 business days.",
+    "email": "contact@sabiosphere.in",
+    "phone": "+91 7830558988",
+    "address": "Gurugram, Haryana, India"
+  },
+
+  "footer": {
+    "description": "A luxury interior design and architecture studio shaping timeless, sustainable spaces.",
+    "socials": [
+      { "label": "Instagram", "href": "https://instagram.com" },
+      { "label": "Pinterest", "href": "https://pinterest.com" },
+      { "label": "LinkedIn", "href": "https://linkedin.com" }
+    ],
+    "copyright": "Sabiosphere. All rights reserved."
+  }
+}

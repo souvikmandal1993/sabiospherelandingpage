@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+
+.stats {
+  background: $secondary-color;
+  padding: 80px 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+.stat {
+  h3 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
