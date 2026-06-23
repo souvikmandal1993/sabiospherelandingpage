@@ -1,8 +1,10 @@
 import "./Hero.scss";
+import { useState } from "react";
 
 import { motion } from "framer-motion";
 
 const Hero = ({ data }) => {
+  const [videoReady, setVideoReady] = useState(false);
   const titleLines = data.title.split("\n");
 
   console.log("Hero data:", data.backgroundVideo);
@@ -16,15 +18,20 @@ const Hero = ({ data }) => {
         transition={{ duration: 2.2, ease: "easeOut" }}
       >
         {data.backgroundVideo ? (
-          <video
-            className="hero__video"
-            src={data.backgroundVideo}
-            poster={data.backgroundImage}
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+          <>
+            {!videoReady && <div className="hero__loading" />}
+
+            <video
+              className={`hero__video ${videoReady ? "visible" : "hidden"}`}
+              src={data.backgroundVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              onCanPlay={() => setVideoReady(true)}
+            />
+          </>
         ) : (
           <div
             className="hero__image"
