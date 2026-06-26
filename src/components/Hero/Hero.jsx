@@ -3,11 +3,11 @@ import { useState } from "react";
 
 import { motion } from "framer-motion";
 
+import HeroForm from "./HeroForm";
+
 const Hero = ({ data }) => {
   const [videoReady, setVideoReady] = useState(false);
   const titleLines = data.title.split("\n");
-
-  console.log("Hero data:", data.backgroundVideo);
 
   return (
     <section className="hero">
@@ -73,6 +73,8 @@ const Hero = ({ data }) => {
             </a>
           </div>
         </motion.div>
+
+        {data.form && <HeroForm data={data.form} />}
 
         <motion.a
           href="#about"

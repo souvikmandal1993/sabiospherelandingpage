@@ -23,16 +23,18 @@ const Navbar = ({ brand, nav }) => {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.7 }}
-      className={`navbar ${scrolled ? "navbar--scrolled" : ""} ${
-        menuOpen ? "navbar--menu-open" : ""
-      }`}
+      className={`navbar ${scrolled || menuOpen ? "navbar--scrolled" : ""}`}
     >
       <div className="navbar__container">
         <a href="#" className="navbar__logo">
-          {brand.name}
+          {brand.logo ? (
+            <img src={brand.logo} alt={brand.name} className="navbar__logo-img" />
+          ) : (
+            brand.name
+          )}
         </a>
 
-        <nav>
+        <nav className={menuOpen ? "navbar__nav--open" : ""}>
           {nav.items.map((item) => (
             <a
               key={item.label}
@@ -43,10 +45,6 @@ const Navbar = ({ brand, nav }) => {
             </a>
           ))}
         </nav>
-
-        <a href="#contact" className="navbar__cta">
-          {nav.cta}
-        </a>
 
         <button
           className="navbar__toggle"

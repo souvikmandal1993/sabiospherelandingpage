@@ -1,0 +1,108 @@
+@use "../../styles/variables" as *;
+
+.hero-form {
+  width: min(100%, 420px);
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 32px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+
+  &__title {
+    font-size: 1.6rem;
+
+    color: #111;
+
+    margin-bottom: 4px;
+  }
+
+  &__field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    span {
+      font-size: 0.8rem;
+
+      font-weight: 600;
+
+      letter-spacing: 0.5px;
+
+      text-transform: uppercase;
+
+      color: #444;
+    }
+
+    input,
+    select {
+      width: 100%;
+
+      padding: 14px 16px;
+
+      border: 1px solid #d8d8d8;
+
+      border-radius: 10px;
+
+      font-size: 1rem;
+
+      color: #111;
+
+      background: #fff;
+
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        outline: none;
+
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  &__submit {
+    margin-top: 6px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: $primary-color;
+
+    color: #111;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: $transition;
+
+    &:hover {
+      transform: translateY(-2px);
+
+      background: $primary-dark;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-form {
+    width: 100%;
+
+    padding: 24px;
+  }
+}
