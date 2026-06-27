@@ -10,7 +10,8 @@
 }
 
 @mixin section-padding {
-  padding: 120px 0;
+  // Fluid vertical rhythm: compact on phones, generous on large screens.
+  padding: clamp(56px, 8vw, 120px) 0;
 }
 
 @mixin heading {

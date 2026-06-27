@@ -1,0 +1,290 @@
+@use "../../styles/variables" as *;
+
+.virtual-tour {
+  position: relative;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  display: flex;
+
+  align-items: center;
+
+  min-height: clamp(460px, 72vh, 660px);
+
+  background: $secondary-color;
+
+  &__bg {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -2;
+
+    background-size: cover;
+
+    background-position: center;
+  }
+
+  &__overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background: linear-gradient(
+      105deg,
+      rgba(10, 10, 12, 0.86) 0%,
+      rgba(10, 10, 12, 0.62) 45%,
+      rgba(10, 10, 12, 0.35) 100%
+    );
+  }
+
+  &__content {
+    max-width: 660px;
+
+    color: $white;
+  }
+
+  &__badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(6px);
+
+    -webkit-backdrop-filter: blur(6px);
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 24px;
+  }
+
+  &__badge-dot {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: $primary-color;
+
+    box-shadow: 0 0 0 0 rgba(200, 169, 126, 0.7);
+
+    animation: tour-dot 2s infinite;
+  }
+
+  &__title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    margin-bottom: 36px;
+  }
+
+  &__btn {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 10px 30px 10px 10px;
+
+    border-radius: 999px;
+
+    background: linear-gradient(135deg, $primary-color, $primary-dark);
+
+    color: #1a1a1a;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      border-radius: 999px;
+
+      box-shadow: 0 0 0 0 rgba(200, 169, 126, 0.55);
+
+      animation: tour-pulse 2.6s infinite;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+
+      box-shadow: 0 14px 30px rgba(159, 125, 80, 0.4);
+    }
+  }
+
+  &__btn-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #1a1a1a;
+
+    color: $primary-color;
+
+    svg {
+      width: 18px;
+
+      height: 18px;
+
+      margin-left: 2px;
+    }
+  }
+
+  // Decorative rotating 360° ring
+  &__ring {
+    position: absolute;
+
+    top: 12%;
+
+    right: 7%;
+
+    z-index: 0;
+
+    width: clamp(96px, 12vw, 150px);
+
+    height: clamp(96px, 12vw, 150px);
+
+    display: grid;
+
+    place-items: center;
+
+    border: 1px dashed rgba(255, 255, 255, 0.35);
+
+    border-radius: 50%;
+
+    animation: tour-spin 18s linear infinite;
+
+    span {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(1.4rem, 2vw, 2rem);
+
+      font-weight: 600;
+
+      letter-spacing: 1px;
+
+      color: rgba(255, 255, 255, 0.9);
+
+      animation: tour-spin 18s linear infinite reverse;
+    }
+  }
+}
+
+@keyframes tour-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tour-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 169, 126, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(200, 169, 126, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 169, 126, 0);
+  }
+}
+
+@keyframes tour-dot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 169, 126, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(200, 169, 126, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 169, 126, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .virtual-tour {
+    text-align: left;
+
+    &__ring {
+      top: auto;
+
+      bottom: 6%;
+
+      right: 6%;
+
+      opacity: 0.7;
+    }
+
+    &__btn {
+      width: 100%;
+
+      justify-content: center;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .virtual-tour__ring,
+  .virtual-tour__ring span,
+  .virtual-tour__btn::before,
+  .virtual-tour__badge-dot {
+    animation: none;
+  }
+}
