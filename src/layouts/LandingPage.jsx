@@ -6,11 +6,14 @@ import About from "../components/About/About";
 import Principal from "../components/Principal/Principal";
 import Budgets from "../components/Budgets/Budgets";
 import VideoReview from "../components/VideoReview/VideoReview";
+import VirtualTour from "../components/VirtualTour/VirtualTour";
+import Solutions from "../components/Solutions/Solutions";
 import Services from "../components/Services/Services";
 import Process from "../components/Process/Process";
 import Stats from "../components/Stats/Stats";
 import FeaturedProjects from "../components/FeaturedProjects/FeaturedProjects";
 import Testimonials from "../components/Testimonials/Testimonials";
+import VideoTestimonials from "../components/VideoTestimonials/VideoTestimonials";
 import CTA from "../components/CTA/CTA";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
@@ -34,9 +37,9 @@ const LandingPage = () => {
 
       <VideoReview data={data.videoReview} />
 
-      {/* <Services data={data.services} />
+      <VirtualTour data={data.virtualTour} />
 
-      <Stats data={data.stats} />
+      <Solutions data={data.solutions} />
 
       <FeaturedProjects data={data.projects} />
 
@@ -44,9 +47,7 @@ const LandingPage = () => {
 
       <Testimonials data={data.testimonials} />
 
-      <CTA data={data.cta} />
-
-      <Contact data={data.contact} /> */}
+      <VideoTestimonials data={data.videoTestimonials} />
 
       <Footer brand={data.brand} nav={data.nav} footer={data.footer} />
 

@@ -3,6 +3,7 @@ import "./Principal.scss";
 import { motion } from "framer-motion";
 
 import Container from "../common/Container/Container";
+import AnimatedTitle from "../common/AnimatedTitle/AnimatedTitle";
 
 import mansiPortrait from "../../assets/images/mansi-portrait.jpg";
 
@@ -24,7 +25,7 @@ const Principal = ({ data }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="principal__title">{data.title}</h2>
+            <AnimatedTitle as="h2" className="principal__title" text={data.title} />
 
             <p className="principal__intro">
               <strong>{data.name}</strong>

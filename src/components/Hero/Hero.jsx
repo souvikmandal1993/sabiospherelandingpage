@@ -4,10 +4,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import HeroForm from "./HeroForm";
+import AnimatedTitle from "../common/AnimatedTitle/AnimatedTitle";
 
 const Hero = ({ data }) => {
   const [videoReady, setVideoReady] = useState(false);
-  const titleLines = data.title.split("\n");
 
   return (
     <section className="hero">
@@ -52,14 +52,7 @@ const Hero = ({ data }) => {
         >
           <span className="hero__eyebrow">{data.eyebrow}</span>
 
-          <h1>
-            {titleLines.map((line, index) => (
-              <span key={line}>
-                {line}
-                {index < titleLines.length - 1 && <br />}
-              </span>
-            ))}
-          </h1>
+          <AnimatedTitle as="h1" text={data.title} duration={1.2} stagger={0.16} />
 
           <p>{data.subtitle}</p>
 

@@ -1,0 +1,12 @@
+.animated-title__line {
+  display: block;
+}
+
+.animated-title__word {
+  display: inline-block;
+
+  white-space: pre;
+
+  // keep the blur from being clipped by the inline box
+  will-change: transform, filter, opacity;
+}

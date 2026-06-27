@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *;
 
 .budgets {
-  background: #f4f4f4;
+  background: $white;
 
   &__head {
     display: flex;
@@ -16,7 +16,7 @@
   }
 
   &__title {
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
 
     color: $secondary-color;
 
@@ -122,7 +122,7 @@
 
     z-index: 1;
 
-    background: rgba(60, 40, 55, 0.9);
+    background: rgba(17, 17, 17, 0.82);
 
     color: $white;
 

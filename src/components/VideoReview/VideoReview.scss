@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *;
 
 .video-review {
-  background: #f4f4f4;
+  background: $background-color;
 
   &__grid {
     display: grid;

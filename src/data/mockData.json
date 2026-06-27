@@ -116,6 +116,37 @@
     "author": "Swati and Gaurav"
   },
 
+  "virtualTour": {
+    "badge": "360° Immersive Experience",
+    "title": "Step Inside Your Home\nBefore It's Built",
+    "subtitle": "Take a guided 3D walkthrough of your future space — explore every room, finish and layout in lifelike detail, all from the comfort of your screen.",
+    "buttonLabel": "Start 3D Tour",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=80"
+  },
+
+  "solutions": {
+    "title": "End-to-end interior solutions",
+    "cta": "Book Free Design Session",
+    "ctaHref": "#contact",
+    "items": [
+      { "label": "Modular Kitchen", "icon": "modular-kitchen" },
+      { "label": "Storage and wardrobe", "icon": "storage-wardrobe" },
+      { "label": "Crockery Units", "icon": "crockery-units" },
+      { "label": "Space Saving Furniture", "icon": "space-saving-furniture" },
+      { "label": "TV Units", "icon": "tv-units" },
+      { "label": "Study Tables", "icon": "study-tables" },
+      { "label": "False Ceiling", "icon": "false-ceiling" },
+      { "label": "Lights", "icon": "lights" },
+      { "label": "Wallpaper", "icon": "wallpaper" },
+      { "label": "Wall Paint", "icon": "wall-paint" },
+      { "label": "Bathroom", "icon": "bathroom" },
+      { "label": "Pooja Unit", "icon": "pooja-unit" },
+      { "label": "Foyer Designs", "icon": "foyer-designs" },
+      { "label": "Movable furniture", "icon": "movable-furniture" },
+      { "label": "Kids Bedroom", "icon": "kids-bedroom" }
+    ]
+  },
+
   "services": {
     "label": "What We Do",
     "title": "Services Tailored To Your Vision",
@@ -148,14 +179,14 @@
   },
 
   "process": {
-    "label": "How We Work",
-    "title": "A Process Built On Clarity",
+    "title": "Our Process",
+    "subtitle": "From the first conversation to the final walkthrough, every step is handled with care.",
     "steps": [
-      { "step": "01", "title": "Site Meeting", "description": "We visit your space to understand the brief, the site and your lifestyle." },
-      { "step": "02", "title": "Concept Discussion", "description": "Moodboards and concepts that translate your brief into a design direction." },
-      { "step": "03", "title": "Design Refinement", "description": "Detailed layouts, materials and finishes refined with your feedback." },
-      { "step": "04", "title": "Execution", "description": "On-ground execution managed closely to match the approved design." },
-      { "step": "05", "title": "Handover", "description": "A final walkthrough and styling before the space becomes yours." }
+      { "step": "01", "title": "Site Meeting", "description": "Understanding your needs, timeline and budget." },
+      { "step": "02", "title": "Concept Discussion", "description": "Developing ideas to harmonize with your vision." },
+      { "step": "03", "title": "Design Refinement", "description": "Refining based on your feedback." },
+      { "step": "04", "title": "Execution", "description": "Implementation with quality control." },
+      { "step": "05", "title": "Handover", "description": "Final inspection and walkthrough." }
     ]
   },
 
@@ -167,78 +198,153 @@
   ],
 
   "projects": {
-    "label": "Portfolio",
-    "title": "Featured Projects",
+    "title": "Featured Work",
+    "subtitle": "Crafting spaces that spark awe—whether it's where you live, create, or connect.",
     "items": [
       {
         "id": 1,
-        "title": "Serene Villa",
-        "location": "Gurugram",
-        "category": "Residential",
-        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
-      },
-      {
-        "id": 2,
-        "title": "The Wellness Collective",
-        "location": "Delhi",
+        "title": "Wellness Tower",
         "category": "Commercial",
         "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
       },
       {
+        "id": 2,
+        "title": "Scenic Modern Villa",
+        "category": "Residential",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
         "id": 3,
+        "title": "Brew & Barrel",
+        "category": "F&B",
+        "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": 4,
         "title": "Skyline Penthouse",
-        "location": "Noida",
         "category": "Residential",
         "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
       },
       {
-        "id": 4,
-        "title": "Atelier Cafe",
-        "location": "Gurugram",
-        "category": "F&B",
-        "image": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=80"
-      },
-      {
         "id": 5,
-        "title": "Maple Residence",
-        "location": "Chandigarh",
-        "category": "Residential",
-        "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80"
+        "title": "Lumen Workspace",
+        "category": "Commercial",
+        "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80"
       },
       {
         "id": 6,
-        "title": "Lumen Workspace",
-        "location": "Delhi",
-        "category": "Commercial",
-        "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80"
+        "title": "Atelier Cafe",
+        "category": "F&B",
+        "image": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=80"
       }
     ]
   },
 
   "testimonials": {
-    "label": "Client Stories",
-    "title": "Spaces, In Their Words",
+    "title": "Client Testimonials",
     "items": [
       {
         "id": 1,
-        "name": "Riya Kapoor",
-        "role": "Homeowner, Gurugram",
-        "quote": "Sabiosphere understood our family before they drew a single line. The home feels like us, only better.",
-        "avatar": "https://i.pravatar.cc/150?img=47"
+        "name": "Dr. Maanik",
+        "role": "Wellness Tower",
+        "quote": "We wanted a space that suits both the clinic and home and is in harmony. The most important aspect for us was the aesthetic, given the nature of our profession—a skin clinic. Sabiosphere team accomplished this perfectly. We were genuinely amazed by Mansi's way of thinking, as she showed a completely different outlook that we hadn't considered before. Keep it up!"
       },
       {
         "id": 2,
-        "name": "Arjun Malhotra",
-        "role": "Founder, The Wellness Collective",
-        "quote": "Every detail, from light to layout, was considered. Our clients comment on the space before they even sit down.",
-        "avatar": "https://i.pravatar.cc/150?img=12"
+        "name": "Mr. Akarsh Singhal",
+        "role": "Scenic Modern Villa",
+        "quote": "Our home looks amazing, and we couldn't be happier with the outcome. We had no clear idea of how to design the space, but Mansi and her team guided us every step of the way. They were extremely helpful and paid attention to every little detail. What we especially loved were the color combinations used—they were perfectly balanced, neither too bold nor too subtle."
       },
       {
         "id": 3,
-        "name": "Neha & Sameer",
-        "role": "Homeowners, Noida",
-        "quote": "Calm, clear communication through every stage of a renovation that could have been stressful. It wasn't, even once.",
-        "avatar": "https://i.pravatar.cc/150?img=32"
+        "name": "Mr. Kailash Yadav",
+        "role": "Modern Oasis",
+        "quote": "Working with Mansi and her team was very smooth. Mansi delivered everything on time and much better than we expected. She constantly checked to ensure every detail aligned with our vision. She was extremely polite and went out of her way to make sure we got what we wanted. I would recommend anyone looking for a reliable designer to reach out to Mansi and her team."
+      },
+      {
+        "id": 4,
+        "name": "Mr. Harshit Yadav",
+        "role": "Skyline Office",
+        "quote": "Overall, it was an excellent experience with Sabiosphere Studios. I am truly impressed by the quality of the handover. The team exceeded my expectations in both design and project execution. Great job, guys! Special thanks to the team for being calm and understanding throughout the process. I highly recommend reaching out to Sabiosphere to plan your space."
+      },
+      {
+        "id": 5,
+        "name": "Mr. Vidit Mathur",
+        "role": "Brew & Barrel",
+        "quote": "I checked with a lot of designers before finalizing Sabiosphere, and it turned out to be the right decision. They didn't just listen to what I wanted—they understood the feeling I wanted the space to evoke, something I didn't find in most designers. They helped me realize things I hadn't even considered. Thanks to the Sabiosphere team, the process was smooth."
+      },
+      {
+        "id": 6,
+        "name": "Mr. Atul",
+        "role": "Regal Elevation",
+        "quote": "I got in touch with Sabiosphere Studios through an online platform – Upwork. I was impressed by their portfolio and the initial concept they presented for my home, which made me hire them. The team understood our situation well and prioritized our project to finish it on time. Addition of Rajasthani elements really stood out in our house elevation. Thank you guys for the great work."
+      },
+      {
+        "id": 7,
+        "name": "Mr. Azad Singh",
+        "role": "All-White Urban Home",
+        "quote": "If you're planning to design your home, you should definitely talk to Mansi from Sabiosphere. Mansi's suggestions were practical and genuinely aimed at improving the design. She's updated with the latest design trends and, most importantly, made sure our ideas were included in the final look. I strongly recommend getting your home interiors done by her studio."
+      },
+      {
+        "id": 8,
+        "name": "Mr. Surya Prakash",
+        "role": "Vibrant Workspace",
+        "quote": "From our very first meeting, the Sabiosphere team just got us. We wanted a space that felt productive but also had a bit of fun, and they delivered exactly that. The process was smooth, the ideas were creative, and every detail was taken care of. The final outcome matches the vision perfectly—both comfortable and fun. Highly recommend Sabiosphere for office design."
+      },
+      {
+        "id": 9,
+        "name": "Mr. Sumeet Meshih",
+        "role": "Refined Loft",
+        "quote": "Working with Mansi was an absolute pleasure. She was always polite, approachable, and fully involved in every aspect of the project. Her availability and willingness to answer all our questions made the entire experience smooth and enjoyable. We truly appreciated her commitment to ensuring the project went as smoothly as possible, and we couldn't be happier with the results."
+      },
+      {
+        "id": 10,
+        "name": "Mrs. Shruti Gupta",
+        "role": "Cohesive Family Home",
+        "quote": "Mansi's ability to understand and incorporate our specific needs into the design was truly remarkable. She listened carefully to our ideas and preferences, and ensured that every corner was as per our vision. Mansi's consistent communication and keen attention to detail ensured that all our requests were addressed. We are beyond thrilled with the final outcome."
+      },
+      {
+        "id": 11,
+        "name": "Mrs. Neelam Kanodia",
+        "role": "Kitchen Revamp",
+        "quote": "Fantastic service! The entire team was superb. I truly appreciated how they handled the project with professionalism and ensured timely completion. Initially, I was concerned there might be delays like with other turnkey providers, but they stayed true to the timeline. I'm especially happy with the drawer design, it's perfectly designed according to my needs."
+      }
+    ]
+  },
+
+  "videoTestimonials": {
+    "title": "We'll let our clients do the talking",
+    "subtitle": "Here's what they have to say",
+    "cta": "Book a Free Consultation",
+    "ctaHref": "#contact",
+    "items": [
+      {
+        "id": 1,
+        "name": "Priyanka and Tarun",
+        "quote": "We wanted our new home to look contemporary and modern since we picked up tastes from across travelling the world.",
+        "thumbnail": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=80",
+        "video": "sample-review"
+      },
+      {
+        "id": 2,
+        "name": "Kanchan and Sumit",
+        "quote": "The designer's dedication made the place look beautiful and it gets better everyday I enter my home.",
+        "thumbnail": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80",
+        "video": "sample-review"
+      },
+      {
+        "id": 3,
+        "name": "Nidhi and Vikas",
+        "quote": "Sabiosphere was the best collaboration for the modern and contemporary home we wanted.",
+        "thumbnail": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80",
+        "video": "sample-review"
+      },
+      {
+        "id": 4,
+        "name": "Aarti and Rohan",
+        "quote": "From the first meeting to handover, the team kept us informed and the result exceeded our expectations.",
+        "thumbnail": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80",
+        "video": "sample-review"
       }
     ]
   },
@@ -263,10 +369,46 @@
   "footer": {
     "description": "A luxury interior design and architecture studio shaping timeless, sustainable spaces.",
     "socials": [
-      { "label": "Instagram", "href": "https://instagram.com" },
-      { "label": "Pinterest", "href": "https://pinterest.com" },
-      { "label": "LinkedIn", "href": "https://linkedin.com" }
+      { "platform": "instagram", "href": "https://instagram.com" },
+      { "platform": "youtube", "href": "https://youtube.com" },
+      { "platform": "pinterest", "href": "https://pinterest.com" },
+      { "platform": "linkedin", "href": "https://linkedin.com" },
+      { "platform": "facebook", "href": "https://facebook.com" }
     ],
+    "columns": [
+      {
+        "title": "Sabiosphere",
+        "links": [
+          { "label": "About Us", "href": "#about" },
+          { "label": "Our Process", "href": "#process" },
+          { "label": "Featured Work", "href": "#projects" },
+          { "label": "Interior Solutions", "href": "#solutions" },
+          { "label": "Book Consultation", "href": "#contact" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Contact Us", "href": "#contact" },
+          { "label": "Privacy Policy", "href": "#" },
+          { "label": "Terms of Use", "href": "#" },
+          { "label": "Terms & Conditions", "href": "#" },
+          { "label": "FAQs", "href": "#" }
+        ]
+      },
+      {
+        "title": "Explore",
+        "links": [
+          { "label": "Design Journal", "href": "#" },
+          { "label": "Home Decor Ideas", "href": "#" },
+          { "label": "Interior Design Ideas", "href": "#" },
+          { "label": "Modular Kitchen", "href": "#solutions" },
+          { "label": "Kids Bedroom", "href": "#solutions" }
+        ]
+      }
+    ],
+    "email": "contact@sabiosphere.in",
+    "phone": "+91 8927542253",
     "copyright": "Sabiosphere. All rights reserved."
   }
 }

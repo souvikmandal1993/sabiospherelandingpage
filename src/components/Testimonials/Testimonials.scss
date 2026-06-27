@@ -1,56 +1,219 @@
 @use "../../styles/variables" as *;
 
 .testimonials {
-  background: $background-color;
+  background: $secondary-color;
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  &__head {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 24px;
+
+    margin-bottom: 40px;
+  }
+
+  &__label {
+    display: inline-block;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    font-size: 0.8rem;
+
+    color: $primary-color;
+
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+
+    color: $white;
+  }
+
+  &__nav {
+    display: flex;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+
+    button {
+      width: 46px;
+
+      height: 46px;
+
+      border: 1px solid rgba(255, 255, 255, 0.25);
+
+      border-radius: 50%;
+
+      background: transparent;
+
+      color: $white;
+
+      font-size: 1.5rem;
+
+      line-height: 1;
+
+      cursor: pointer;
+
+      transition: $transition;
+
+      &:hover {
+        background: $primary-color;
+
+        border-color: $primary-color;
+
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__track {
+    display: flex;
+
+    gap: 24px;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 8px;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
 .testimonial-card {
-  background: $white;
-  border-radius: $radius-md;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  position: relative;
 
-  p {
+  flex: 0 0 100%;
+
+  scroll-snap-align: start;
+
+  margin: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: $radius-lg;
+
+  padding: 44px 32px 30px;
+
+  &__mark {
+    position: absolute;
+
+    top: 4px;
+
+    left: 24px;
+
     font-family: "Cormorant Garamond", serif;
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: $text-color;
+
+    font-size: 5rem;
+
+    line-height: 1;
+
+    color: $primary-color;
+
+    opacity: 0.4;
+  }
+
+  blockquote {
+    position: relative;
+
+    flex: 1;
+
+    font-size: 1.02rem;
+
+    line-height: 1.75;
+
+    font-style: italic;
+
+    color: rgba(255, 255, 255, 0.88);
+
     margin-bottom: 28px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 7;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
   }
 
   &__author {
     display: flex;
+
     align-items: center;
+
     gap: 14px;
+  }
 
-    img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+  &__avatar {
+    flex-shrink: 0;
 
-    h4 {
-      font-size: 1rem;
-      font-family: "Inter", sans-serif;
-      font-weight: 600;
-    }
+    width: 48px;
 
-    span {
-      font-size: 0.85rem;
-      color: $text-light;
-    }
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, $primary-color, $primary-dark);
+
+    color: $white;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    display: grid;
+
+    place-items: center;
+  }
+
+  &__author strong {
+    display: block;
+
+    color: $white;
+
+    font-size: 1.02rem;
+  }
+
+  &__author em {
+    display: block;
+
+    margin-top: 2px;
+
+    font-style: normal;
+
+    font-size: 0.88rem;
+
+    color: $primary-color;
   }
 }
 
-@media (max-width: 1100px) {
-  .testimonials__grid {
-    grid-template-columns: 1fr;
+@media (min-width: 600px) {
+  .testimonial-card {
+    flex-basis: calc(50% - 12px);
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial-card {
+    flex-basis: calc(33.333% - 16px);
   }
 }

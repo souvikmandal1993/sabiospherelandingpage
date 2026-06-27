@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import Container from "../common/Container/Container";
+import AnimatedTitle from "../common/AnimatedTitle/AnimatedTitle";
 
 const Budgets = ({ data }) => {
   const [active, setActive] = useState(null);
@@ -18,7 +19,7 @@ const Budgets = ({ data }) => {
       <Container>
         <div className="budgets__head">
           <div>
-            <h2 className="budgets__title">{data.title}</h2>
+            <AnimatedTitle as="h2" className="budgets__title" text={data.title} />
 
             <p className="budgets__subtitle">{data.subtitle}</p>
           </div>
