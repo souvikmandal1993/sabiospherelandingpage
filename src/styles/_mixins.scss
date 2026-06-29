@@ -1,27 +1,4 @@
-@mixin container {
-  width: min(92%, 1400px);
-  margin-inline: auto;
-}
-
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @mixin section-padding {
   // Fluid vertical rhythm: compact on phones, generous on large screens.
   padding: clamp(56px, 8vw, 120px) 0;
-}
-
-@mixin heading {
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  line-height: 1.1;
-  font-weight: 500;
-}
-
-@mixin subtitle {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }

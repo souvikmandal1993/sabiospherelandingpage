@@ -10,13 +10,12 @@
 
   "nav": {
     "items": [
-      { "label": "About", "href": "#about" },
-      { "label": "Services", "href": "#services" },
+      { "label": "About", "href": "#principal" },
+      { "label": "Solutions", "href": "#solutions" },
       { "label": "Projects", "href": "#projects" },
       { "label": "Process", "href": "#process" },
-      { "label": "Contact", "href": "#contact" }
-    ],
-    "cta": "Book Consultation"
+      { "label": "Testimonials", "href": "#testimonials" }
+    ]
   },
 
   "hero": {
@@ -45,14 +44,6 @@
       { "label": "Flat 10-year warranty", "icon": "warranty" },
       { "label": "Transparent pricing", "icon": "transparent-pricing" }
     ]
-  },
-
-  "about": {
-    "label": "About Us",
-    "title": "Designing Elegant Spaces With Purpose & Precision",
-    "description": "Great design begins with listening. Since 2019, Sabiosphere has stayed deeply involved in every project from first sketch to final handover, blending architecture, interiors and sustainability into timeless living experiences that tell a story and evoke emotion.",
-    "founderQuote": "Great design begins with listening. I stay deeply involved from start to finish, so every space we create genuinely reflects the people who live in it.",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80"
   },
 
   "principal": {
@@ -147,37 +138,6 @@
     ]
   },
 
-  "services": {
-    "label": "What We Do",
-    "title": "Services Tailored To Your Vision",
-    "items": [
-      {
-        "id": 1,
-        "title": "Residential Design",
-        "description": "Bespoke homes, villas and apartments designed around how you actually live.",
-        "icon": "home"
-      },
-      {
-        "id": 2,
-        "title": "Commercial Design",
-        "description": "Offices, wellness centres and F&B spaces built to elevate every visit.",
-        "icon": "building"
-      },
-      {
-        "id": 3,
-        "title": "Renovation",
-        "description": "Reimagining existing spaces with new layouts, finishes and life.",
-        "icon": "tool"
-      },
-      {
-        "id": 4,
-        "title": "Procurement Service",
-        "description": "End-to-end sourcing of furniture, fixtures and finishes, handled for you.",
-        "icon": "package"
-      }
-    ]
-  },
-
   "process": {
     "title": "Our Process",
     "subtitle": "From the first conversation to the final walkthrough, every step is handled with care.",
@@ -189,13 +149,6 @@
       { "step": "05", "title": "Handover", "description": "Final inspection and walkthrough." }
     ]
   },
-
-  "stats": [
-    { "number": 50, "suffix": "+", "label": "Projects Delivered" },
-    { "number": 100, "suffix": "%", "label": "Client Satisfaction" },
-    { "number": 7, "suffix": "+", "label": "Years of Experience" },
-    { "number": 12, "suffix": "+", "label": "Cities Served" }
-  ],
 
   "projects": {
     "title": "Featured Work",
@@ -349,21 +302,9 @@
     ]
   },
 
-  "cta": {
-    "title": "Have A Space In Mind?",
-    "subtitle": "Tell us about your project and let's shape something timeless together.",
-    "button": "Start Your Project"
-  },
-
   "contact": {
-    "label": "Get In Touch",
-    "title": "Let's Start Your Project",
-    "description": "Share a few details about your space and we'll get back to you within 2 business days.",
-    "email": "contact@sabiosphere.in",
-    "phone": "+91 8927542253",
     "whatsapp": "+91 8927542253",
-    "whatsappMessage": "Hi Sabiosphere, I'd like to know more about your interior design services.",
-    "address": "Gurugram, Haryana, India"
+    "whatsappMessage": "Hi Sabiosphere, I'd like to know more about your interior design services."
   },
 
   "footer": {
