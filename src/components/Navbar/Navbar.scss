@@ -170,6 +170,17 @@
 
 @media (max-width: 992px) {
   .navbar {
+    // Icon-only phone button on mobile so the number never wraps.
+    &__phone {
+      padding: 11px;
+
+      gap: 0;
+    }
+
+    &__phone-text {
+      display: none;
+    }
+
     &__toggle {
       display: flex;
     }

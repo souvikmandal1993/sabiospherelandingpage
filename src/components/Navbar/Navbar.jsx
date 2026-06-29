@@ -63,7 +63,7 @@ const Navbar = ({ brand, nav }) => {
                 />
               </svg>
 
-              {nav.phone}
+              <span className="navbar__phone-text">{nav.phone}</span>
             </a>
           )}
 
