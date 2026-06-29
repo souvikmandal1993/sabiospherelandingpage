@@ -34,7 +34,7 @@ const Solutions = ({ data }) => {
               className="solutions__item"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.4, delay: (index % 5) * 0.05 }}
             >
               <span className="solutions__icon">
@@ -46,13 +46,13 @@ const Solutions = ({ data }) => {
           ))}
         </div>
 
-        {data.cta && (
+        {/* {data.cta && (
           <div className="solutions__cta-wrap">
             <a href={data.ctaHref || "#contact"} className="solutions__cta">
               {data.cta}
             </a>
           </div>
-        )}
+        )} */}
       </Container>
     </section>
   );

@@ -26,7 +26,7 @@ const FeaturedProjects = ({ data }) => {
               className="project-card"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: index * 0.12, duration: 0.7 }}
               whileHover={{ y: -8 }}
             >

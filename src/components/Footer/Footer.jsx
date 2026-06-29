@@ -1,91 +1,94 @@
 import "./Footer.scss";
 
+import { motion } from "framer-motion";
+
 import Container from "../common/Container/Container";
 
-// Load social icons once, keyed by file name (e.g. "instagram").
-const socialModules = import.meta.glob("../../assets/icons/social/*.svg", {
-  eager: true,
-  query: "?url",
-  import: "default",
-});
-
-const socialIcons = Object.fromEntries(
-  Object.entries(socialModules).map(([path, url]) => [
-    path.split("/").pop().replace(".svg", ""),
-    url,
-  ])
+const MailIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M4 5h16v14H4z M4 6l8 6 8-6"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
 );
 
-const Footer = ({ brand, footer }) => {
+const PhoneIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L16 13l5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const Footer = ({ footer }) => {
   const year = new Date().getFullYear();
 
   return (
     <footer className="footer">
-      <Container>
-        <div className="footer__top">
-          <div className="footer__brand">
-            {brand.logo ? (
-              <img
-                className="footer__logo"
-                src={brand.logo}
-                alt={brand.name}
-              />
-            ) : (
-              <h3 className="footer__name">{brand.name}</h3>
-            )}
+      {footer.cta && (
+        <div className="footer__cta">
+          <Container>
+            <motion.div
+              className="footer__cta-inner"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.4 }}
+              transition={{ duration: 0.7 }}
+            >
+              <h2 className="footer__cta-title">
+                <span>{footer.cta.highlight}</span> {footer.cta.title}
+              </h2>
 
-            {footer.description && <p>{footer.description}</p>}
+              {footer.cta.subtitle && (
+                <p className="footer__cta-subtitle">{footer.cta.subtitle}</p>
+              )}
 
-            <div className="footer__socials">
-              {footer.socials.map((social) => (
-                <a
-                  key={social.platform}
-                  href={social.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={social.platform}
-                >
-                  <img src={socialIcons[social.platform]} alt="" aria-hidden="true" />
+              <a
+                href={footer.cta.buttonHref || "#contact"}
+                className="footer__cta-btn"
+              >
+                {footer.cta.buttonLabel}
+              </a>
+            </motion.div>
+          </Container>
+        </div>
+      )}
+
+      <div className="footer__bottom">
+        <Container>
+          <div className="footer__bottom-inner">
+            <span className="footer__copyright">
+              Copyright © {year} {footer.copyright}
+            </span>
+
+            <div className="footer__contact">
+              {footer.email && (
+                <a href={`mailto:${footer.email}`}>
+                  <MailIcon />
+                  {footer.email}
                 </a>
-              ))}
+              )}
+
+              {footer.phone && (
+                <a href={`tel:${footer.phone.replace(/\s/g, "")}`}>
+                  <PhoneIcon />
+                  {footer.phone}
+                </a>
+              )}
             </div>
           </div>
-
-          <div className="footer__columns">
-            {footer.columns.map((column) => (
-              <div key={column.title} className="footer__column">
-                <h4>{column.title}</h4>
-
-                <ul>
-                  {column.links.map((link) => (
-                    <li key={link.label}>
-                      <a href={link.href}>{link.label}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="footer__bottom">
-          <span className="footer__copyright">
-            © {year} {footer.copyright}
-          </span>
-
-          <div className="footer__contact">
-            {footer.email && (
-              <a href={`mailto:${footer.email}`}>{footer.email}</a>
-            )}
-
-            {footer.phone && (
-              <a href={`tel:${footer.phone.replace(/\s/g, "")}`}>
-                {footer.phone}
-              </a>
-            )}
-          </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </footer>
   );
 };

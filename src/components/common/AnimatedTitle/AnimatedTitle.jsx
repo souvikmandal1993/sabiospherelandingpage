@@ -17,8 +17,12 @@ const AnimatedTitle = ({
   className = "",
   duration = DEFAULT_DURATION,
   stagger = DEFAULT_STAGGER,
+  highlight = "",
 }) => {
   const reduceMotion = useReducedMotion();
+
+  // Words listed in `highlight` (space separated) get the accent colour.
+  const accentWords = new Set(highlight.split(" ").filter(Boolean));
 
   // Respect users who prefer reduced motion: render plain text.
   if (reduceMotion) {
@@ -51,14 +55,16 @@ const AnimatedTitle = ({
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.3 }}
     >
       {lines.map((line, lineIndex) => (
         <span key={lineIndex} className="animated-title__line" aria-hidden="true">
           {line.split(" ").map((word, wordIndex) => (
             <motion.span
               key={wordIndex}
-              className="animated-title__word"
+              className={`animated-title__word${
+                accentWords.has(word) ? " animated-title__word--accent" : ""
+              }`}
               variants={wordVariants}
             >
               {word}

@@ -44,7 +44,7 @@ const VideoReview = ({ data }) => {
             className="video-review__media"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.7 }}
           >
             <video
@@ -75,7 +75,7 @@ const VideoReview = ({ data }) => {
             className="video-review__content"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.7 }}
           >
             <blockquote className="video-review__quote">

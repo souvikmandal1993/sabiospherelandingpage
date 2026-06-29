@@ -46,15 +46,37 @@ const Navbar = ({ brand, nav }) => {
           ))}
         </nav>
 
-        <button
-          className="navbar__toggle"
-          aria-label="Toggle menu"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <div className="navbar__actions">
+          {nav.phone && (
+            <a
+              href={`tel:${nav.phone.replace(/\s/g, "")}`}
+              className="navbar__phone"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L16 13l5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+
+              {nav.phone}
+            </a>
+          )}
+
+          <button
+            className="navbar__toggle"
+            aria-label="Toggle menu"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
     </motion.header>
   );

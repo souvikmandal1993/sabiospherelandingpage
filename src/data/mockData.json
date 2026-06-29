@@ -9,22 +9,21 @@
   },
 
   "nav": {
+    "phone": "+91 8927542253",
     "items": [
-      { "label": "About", "href": "#about" },
-      { "label": "Services", "href": "#services" },
+      { "label": "About", "href": "#principal" },
+      { "label": "Solutions", "href": "#solutions" },
       { "label": "Projects", "href": "#projects" },
       { "label": "Process", "href": "#process" },
-      { "label": "Contact", "href": "#contact" }
-    ],
-    "cta": "Book Consultation"
+      { "label": "Testimonials", "href": "#testimonials" }
+    ]
   },
 
   "hero": {
     "eyebrow": "Luxury Interior Design Studio",
-    "title": "Shape Your Space,\nShape Your Life.",
-    "subtitle": "Sabiosphere crafts sophisticated residential and commercial interiors that balance beauty, function and emotion — designed around the way you actually live.",
-    "primaryButton": "Book Consultation",
-    "secondaryButton": "View Projects",
+    "title": "Your Plot. Your Dream.\nZero Compromise.",
+    "titleHighlight": "Zero",
+    "subtitle": "Build your home with India's most trusted tech-enabled construction partner. Get 100% material tracking, fixed timelines, and zero cost overruns.",
     "backgroundImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80",
     "backgroundVideo": "https://videos.pexels.com/video-files/3773486/3773486-hd_1920_1080_30fps.mp4",
     "form": {
@@ -47,14 +46,6 @@
     ]
   },
 
-  "about": {
-    "label": "About Us",
-    "title": "Designing Elegant Spaces With Purpose & Precision",
-    "description": "Great design begins with listening. Since 2019, Sabiosphere has stayed deeply involved in every project from first sketch to final handover, blending architecture, interiors and sustainability into timeless living experiences that tell a story and evoke emotion.",
-    "founderQuote": "Great design begins with listening. I stay deeply involved from start to finish, so every space we create genuinely reflects the people who live in it.",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80"
-  },
-
   "principal": {
     "title": "Meet the Principal",
     "name": "Architect Mansi Rajgarhia",
@@ -67,43 +58,68 @@
   },
 
   "budgets": {
-    "title": "Homes for every budget",
-    "subtitle": "Our interior designers work with you keeping in mind your requirements and budget",
-    "cta": "Get Free Quote",
+    "title": "Home Construction Cost Per Sqft",
+    "subtitle": "Average residential construction costs in Delhi range from ₹1,250 to ₹4,500 per sqft depending on the quality of finishes.",
+    "cta": "Learn More",
     "ctaHref": "#contact",
-    "note": "*The prices include only modular interiors for new homes.",
     "items": [
       {
-        "label": "2BHK",
-        "startingAt": "3.57L*",
-        "cover": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
-        "gallery": [
-          "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+        "name": "Basic Structure",
+        "price": "₹1,250 – ₹1,400",
+        "unit": "/sqft",
+        "description": "A budget package with no compromise on quality that includes all construction essentials",
+        "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
+        "featured": false,
+        "features": [
+          "Trusted brand steel & cement",
+          "Standard flush doors and window finish",
+          "Tractor Emulsion finish",
+          "Essential kitchen & bathroom fittings"
         ]
       },
       {
-        "label": "3BHK",
-        "startingAt": "4.23L*",
-        "cover": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80",
-        "gallery": [
-          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80"
+        "name": "Basic Finishing",
+        "price": "₹1,900 – ₹2,200",
+        "unit": "/sqft",
+        "description": "The Best-Seller Package. Upgrade your home with trusted brands like Jindal Steel and Hindware at an affordable price.",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80",
+        "featured": false,
+        "features": [
+          "Superior brand cement & steel",
+          "Elegant teak doors and window finish",
+          "Stylish kitchen & bathroom",
+          "High-Grade Bricks"
         ]
       },
       {
-        "label": "4BHK",
-        "startingAt": "4.81L*",
-        "cover": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
-        "gallery": [
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80"
+        "name": "Advance Finishing",
+        "price": "₹2,500 – ₹3,000+",
+        "unit": "/sqft",
+        "description": "Designed for Modern Living: An elegant package with luxury additions, including solar heating setups and dedicated puja room doors.",
+        "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80",
+        "featured": true,
+        "features": [
+          "Superior Brand steel & cement",
+          "Designer teak doors and window finish",
+          "Best quality bathroom & kitchen",
+          "Textured Designer Paint",
+          "AAC Blocks / High-Grade Bricks"
+        ]
+      },
+      {
+        "name": "Premium Finishing",
+        "price": "₹3,200 – ₹4,000+",
+        "unit": "/sqft",
+        "description": "Premium finishes meeting modern lifestyle features, from EV charging ports to secure copper gas connections.",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
+        "featured": false,
+        "features": [
+          "Superior Brand steel & cement",
+          "Designer teak doors and window finish",
+          "Apex Ultima Exterior finish",
+          "Lavish Fittings for kitchen & bathroom",
+          "AAC Blocks / High-Grade Bricks",
+          "Bespoke Designer Kitchen & Wardrobes"
         ]
       }
     ]
@@ -117,11 +133,69 @@
   },
 
   "virtualTour": {
-    "badge": "360° Immersive Experience",
-    "title": "Step Inside Your Home\nBefore It's Built",
-    "subtitle": "Take a guided 3D walkthrough of your future space — explore every room, finish and layout in lifelike detail, all from the comfort of your screen.",
-    "buttonLabel": "Start 3D Tour",
-    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=80"
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=80",
+    "heading": "600+ Expert Designers,\nReady to Design Your First Home.",
+    "form": {
+      "step": { "prefix": "STEP", "current": "1", "suffix": "OF 2" },
+      "title": "Meet a designer",
+      "propertyTypeLabel": "Select Your Property Type",
+      "propertyTypes": ["1 BHK", "2 BHK", "3 BHK", "3+ BHK"],
+      "locationLabel": "Your Property Location",
+      "locationPlaceholder": "Select your property location",
+      "locationOptions": [
+        "Gurugram",
+        "New Delhi",
+        "Noida",
+        "Faridabad",
+        "Ghaziabad"
+      ],
+      "budgetLabel": "I have a budget of…",
+      "budgetPlaceholder": "Select Budget",
+      "budgetOptions": [
+        "Under ₹10 Lakhs",
+        "₹10 – 25 Lakhs",
+        "₹25 – 50 Lakhs",
+        "₹50 Lakhs +"
+      ],
+      "submitLabel": "Book 3D Design Session",
+      "freeTag": "FREE",
+      "disclaimer": {
+        "prefix": "By submitting, you agree to our ",
+        "privacyLabel": "privacy policy",
+        "privacyHref": "#",
+        "middle": " and ",
+        "termsLabel": "terms of use",
+        "termsHref": "#",
+        "suffix": ", allowing us to use your information as outlined."
+      }
+    }
+  },
+
+  "whyUs": {
+    "title": "Why Sabiosphere?",
+    "intro": "Choosing Sabiosphere means partnering with a team that brings expertise, innovation, and dedication to every project. We combine artistic vision with practical functionality to deliver spaces that not only look stunning but also serve their intended purpose perfectly.",
+    "items": [
+      {
+        "icon": "team",
+        "title": "Expert Team",
+        "description": "Our experienced designers and craftsmen bring years of industry expertise to every project."
+      },
+      {
+        "icon": "palette",
+        "title": "Tailored Solutions",
+        "description": "We create custom designs that perfectly match your vision, lifestyle, and specific requirements."
+      },
+      {
+        "icon": "award",
+        "title": "Quality Guaranteed",
+        "description": "From premium materials to meticulous craftsmanship, we ensure excellence in every detail."
+      },
+      {
+        "icon": "compass",
+        "title": "Vastu Compliant",
+        "description": "We design thoughtful spaces tailored for clients who value Vastu principles."
+      }
+    ]
   },
 
   "solutions": {
@@ -147,37 +221,6 @@
     ]
   },
 
-  "services": {
-    "label": "What We Do",
-    "title": "Services Tailored To Your Vision",
-    "items": [
-      {
-        "id": 1,
-        "title": "Residential Design",
-        "description": "Bespoke homes, villas and apartments designed around how you actually live.",
-        "icon": "home"
-      },
-      {
-        "id": 2,
-        "title": "Commercial Design",
-        "description": "Offices, wellness centres and F&B spaces built to elevate every visit.",
-        "icon": "building"
-      },
-      {
-        "id": 3,
-        "title": "Renovation",
-        "description": "Reimagining existing spaces with new layouts, finishes and life.",
-        "icon": "tool"
-      },
-      {
-        "id": 4,
-        "title": "Procurement Service",
-        "description": "End-to-end sourcing of furniture, fixtures and finishes, handled for you.",
-        "icon": "package"
-      }
-    ]
-  },
-
   "process": {
     "title": "Our Process",
     "subtitle": "From the first conversation to the final walkthrough, every step is handled with care.",
@@ -189,13 +232,6 @@
       { "step": "05", "title": "Handover", "description": "Final inspection and walkthrough." }
     ]
   },
-
-  "stats": [
-    { "number": 50, "suffix": "+", "label": "Projects Delivered" },
-    { "number": 100, "suffix": "%", "label": "Client Satisfaction" },
-    { "number": 7, "suffix": "+", "label": "Years of Experience" },
-    { "number": 12, "suffix": "+", "label": "Cities Served" }
-  ],
 
   "projects": {
     "title": "Featured Work",
@@ -247,66 +283,77 @@
         "id": 1,
         "name": "Dr. Maanik",
         "role": "Wellness Tower",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
         "quote": "We wanted a space that suits both the clinic and home and is in harmony. The most important aspect for us was the aesthetic, given the nature of our profession—a skin clinic. Sabiosphere team accomplished this perfectly. We were genuinely amazed by Mansi's way of thinking, as she showed a completely different outlook that we hadn't considered before. Keep it up!"
       },
       {
         "id": 2,
         "name": "Mr. Akarsh Singhal",
         "role": "Scenic Modern Villa",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
         "quote": "Our home looks amazing, and we couldn't be happier with the outcome. We had no clear idea of how to design the space, but Mansi and her team guided us every step of the way. They were extremely helpful and paid attention to every little detail. What we especially loved were the color combinations used—they were perfectly balanced, neither too bold nor too subtle."
       },
       {
         "id": 3,
         "name": "Mr. Kailash Yadav",
         "role": "Modern Oasis",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
         "quote": "Working with Mansi and her team was very smooth. Mansi delivered everything on time and much better than we expected. She constantly checked to ensure every detail aligned with our vision. She was extremely polite and went out of her way to make sure we got what we wanted. I would recommend anyone looking for a reliable designer to reach out to Mansi and her team."
       },
       {
         "id": 4,
         "name": "Mr. Harshit Yadav",
         "role": "Skyline Office",
+        "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=600&q=80",
         "quote": "Overall, it was an excellent experience with Sabiosphere Studios. I am truly impressed by the quality of the handover. The team exceeded my expectations in both design and project execution. Great job, guys! Special thanks to the team for being calm and understanding throughout the process. I highly recommend reaching out to Sabiosphere to plan your space."
       },
       {
         "id": 5,
         "name": "Mr. Vidit Mathur",
         "role": "Brew & Barrel",
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
         "quote": "I checked with a lot of designers before finalizing Sabiosphere, and it turned out to be the right decision. They didn't just listen to what I wanted—they understood the feeling I wanted the space to evoke, something I didn't find in most designers. They helped me realize things I hadn't even considered. Thanks to the Sabiosphere team, the process was smooth."
       },
       {
         "id": 6,
         "name": "Mr. Atul",
         "role": "Regal Elevation",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
         "quote": "I got in touch with Sabiosphere Studios through an online platform – Upwork. I was impressed by their portfolio and the initial concept they presented for my home, which made me hire them. The team understood our situation well and prioritized our project to finish it on time. Addition of Rajasthani elements really stood out in our house elevation. Thank you guys for the great work."
       },
       {
         "id": 7,
         "name": "Mr. Azad Singh",
         "role": "All-White Urban Home",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
         "quote": "If you're planning to design your home, you should definitely talk to Mansi from Sabiosphere. Mansi's suggestions were practical and genuinely aimed at improving the design. She's updated with the latest design trends and, most importantly, made sure our ideas were included in the final look. I strongly recommend getting your home interiors done by her studio."
       },
       {
         "id": 8,
         "name": "Mr. Surya Prakash",
         "role": "Vibrant Workspace",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
         "quote": "From our very first meeting, the Sabiosphere team just got us. We wanted a space that felt productive but also had a bit of fun, and they delivered exactly that. The process was smooth, the ideas were creative, and every detail was taken care of. The final outcome matches the vision perfectly—both comfortable and fun. Highly recommend Sabiosphere for office design."
       },
       {
         "id": 9,
         "name": "Mr. Sumeet Meshih",
         "role": "Refined Loft",
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
         "quote": "Working with Mansi was an absolute pleasure. She was always polite, approachable, and fully involved in every aspect of the project. Her availability and willingness to answer all our questions made the entire experience smooth and enjoyable. We truly appreciated her commitment to ensuring the project went as smoothly as possible, and we couldn't be happier with the results."
       },
       {
         "id": 10,
         "name": "Mrs. Shruti Gupta",
         "role": "Cohesive Family Home",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
         "quote": "Mansi's ability to understand and incorporate our specific needs into the design was truly remarkable. She listened carefully to our ideas and preferences, and ensured that every corner was as per our vision. Mansi's consistent communication and keen attention to detail ensured that all our requests were addressed. We are beyond thrilled with the final outcome."
       },
       {
         "id": 11,
         "name": "Mrs. Neelam Kanodia",
         "role": "Kitchen Revamp",
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
         "quote": "Fantastic service! The entire team was superb. I truly appreciated how they handled the project with professionalism and ensured timely completion. Initially, I was concerned there might be delays like with other turnkey providers, but they stayed true to the timeline. I'm especially happy with the drawer design, it's perfectly designed according to my needs."
       }
     ]
@@ -349,24 +396,26 @@
     ]
   },
 
-  "cta": {
-    "title": "Have A Space In Mind?",
-    "subtitle": "Tell us about your project and let's shape something timeless together.",
-    "button": "Start Your Project"
+  "bookConsultation": {
+    "title": "The home design you crave",
+    "subtitle": "When you give your home the Sabiosphere touch, you get both beauty and functionality. We employ state-of-the-art technology to ensure your home features a flawless look that lasts a very long time.",
+    "cta": "Book Free Consultation",
+    "ctaHref": "#contact"
   },
 
   "contact": {
-    "label": "Get In Touch",
-    "title": "Let's Start Your Project",
-    "description": "Share a few details about your space and we'll get back to you within 2 business days.",
-    "email": "contact@sabiosphere.in",
-    "phone": "+91 8927542253",
     "whatsapp": "+91 8927542253",
-    "whatsappMessage": "Hi Sabiosphere, I'd like to know more about your interior design services.",
-    "address": "Gurugram, Haryana, India"
+    "whatsappMessage": "Hi Sabiosphere, I'd like to know more about your interior design services."
   },
 
   "footer": {
+    "cta": {
+      "highlight": "Your dream home",
+      "title": "is just a click away",
+      "subtitle": "Book a free consultation with our expert interior designers.",
+      "buttonLabel": "Start Your Design Journey",
+      "buttonHref": "#contact"
+    },
     "description": "A luxury interior design and architecture studio shaping timeless, sustainable spaces.",
     "socials": [
       { "platform": "instagram", "href": "https://instagram.com" },
@@ -409,6 +458,6 @@
     ],
     "email": "contact@sabiosphere.in",
     "phone": "+91 8927542253",
-    "copyright": "Sabiosphere. All rights reserved."
+    "copyright": "Sabiosphere Decor and Furnishings Private Limited. All rights reserved."
   }
 }
