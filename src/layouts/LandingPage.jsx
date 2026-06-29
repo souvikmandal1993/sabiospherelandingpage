@@ -6,11 +6,12 @@ import Principal from "../components/Principal/Principal";
 import Budgets from "../components/Budgets/Budgets";
 import VideoReview from "../components/VideoReview/VideoReview";
 import VirtualTour from "../components/VirtualTour/VirtualTour";
+import WhyUs from "../components/WhyUs/WhyUs";
 import Solutions from "../components/Solutions/Solutions";
 import Process from "../components/Process/Process";
 import FeaturedProjects from "../components/FeaturedProjects/FeaturedProjects";
 import Testimonials from "../components/Testimonials/Testimonials";
-import VideoTestimonials from "../components/VideoTestimonials/VideoTestimonials";
+import BookConsultation from "../components/BookConsultation/BookConsultation";
 import Footer from "../components/Footer/Footer";
 
 import data from "../data/mockData.json";
@@ -32,6 +33,8 @@ const LandingPage = () => {
 
       <VirtualTour data={data.virtualTour} />
 
+      <WhyUs data={data.whyUs} />
+
       <Solutions data={data.solutions} />
 
       <FeaturedProjects data={data.projects} />
@@ -40,7 +43,7 @@ const LandingPage = () => {
 
       <Testimonials data={data.testimonials} />
 
-      <VideoTestimonials data={data.videoTestimonials} />
+      <BookConsultation data={data.bookConsultation} />
 
       <Footer brand={data.brand} footer={data.footer} />
 

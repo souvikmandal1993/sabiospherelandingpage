@@ -52,19 +52,15 @@ const Hero = ({ data }) => {
         >
           <span className="hero__eyebrow">{data.eyebrow}</span>
 
-          <AnimatedTitle as="h1" text={data.title} duration={1.2} stagger={0.16} />
+          <AnimatedTitle
+            as="h1"
+            text={data.title}
+            highlight={data.titleHighlight}
+            duration={1.2}
+            stagger={0.16}
+          />
 
           <p>{data.subtitle}</p>
-
-          <div className="hero__actions">
-            <a href="#contact" className="primary-btn">
-              {data.primaryButton}
-            </a>
-
-            <a href="#projects" className="secondary-btn">
-              {data.secondaryButton}
-            </a>
-          </div>
         </motion.div>
 
         {data.form && <HeroForm data={data.form} />}

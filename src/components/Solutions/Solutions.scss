@@ -42,9 +42,7 @@
 
     place-items: center;
 
-    color: $primary-color;
-
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease;
 
     img {
       width: 100%;
@@ -55,8 +53,6 @@
 
   &__item:hover &__icon {
     transform: translateY(-4px);
-
-    color: $primary-dark;
   }
 
   &__label {

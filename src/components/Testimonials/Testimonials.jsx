@@ -58,22 +58,28 @@ const Testimonials = ({ data }) => {
         <div className="testimonials__track" ref={trackRef}>
           {data.items.map((testimonial) => (
             <figure key={testimonial.id} className="testimonial-card">
-              <span className="testimonial-card__mark" aria-hidden="true">
-                &ldquo;
-              </span>
+              {testimonial.image && (
+                <div className="testimonial-card__media">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    loading="lazy"
+                  />
+                </div>
+              )}
 
-              <blockquote>{testimonial.quote}</blockquote>
-
-              <figcaption className="testimonial-card__author">
-                <span className="testimonial-card__avatar">
-                  {testimonial.name.charAt(0)}
+              <div className="testimonial-card__body">
+                <span className="testimonial-card__mark" aria-hidden="true">
+                  &ldquo;
                 </span>
 
-                <span>
+                <blockquote>{testimonial.quote}</blockquote>
+
+                <figcaption className="testimonial-card__author">
                   <strong>{testimonial.name}</strong>
                   {testimonial.role && <em>{testimonial.role}</em>}
-                </span>
-              </figcaption>
+                </figcaption>
+              </div>
             </figure>
           ))}
         </div>

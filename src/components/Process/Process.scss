@@ -41,142 +41,113 @@
     margin-inline: auto;
   }
 
-  // ---- Timeline ----
+  // ---- Timeline (horizontal step row) ----
   &__timeline {
-    position: relative;
+    display: flex;
 
-    padding-left: 56px;
-  }
+    flex-direction: column;
 
-  &__line {
-    position: absolute;
-
-    top: 6px;
-
-    bottom: 6px;
-
-    left: 20px;
-
-    width: 2px;
-
-    background: linear-gradient(
-      to bottom,
-      $primary-color,
-      $primary-dark
-    );
-
-    transform-origin: top center;
-
-    border-radius: 2px;
+    gap: 40px;
   }
 }
+
+$node-size: 72px;
 
 .process-step {
   position: relative;
 
-  padding-bottom: 40px;
+  flex: 1;
 
-  &:last-child {
-    padding-bottom: 0;
-  }
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
 
   &__node {
-    position: absolute;
+    display: grid;
 
-    left: -56px;
+    place-items: center;
 
-    top: 0;
+    width: $node-size;
 
-    width: 42px;
-
-    height: 42px;
+    height: $node-size;
 
     border-radius: 50%;
 
     background: $white;
 
-    border: 2px solid $primary-color;
+    border: 2px solid $border-color;
 
     color: $primary-dark;
 
     font-weight: 700;
 
-    font-size: 0.95rem;
-
-    display: grid;
-
-    place-items: center;
+    font-size: 1.15rem;
 
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+    transition: $transition;
 
     z-index: 1;
   }
 
-  &__card {
-    background: $white;
+  &__title {
+    margin-top: 18px;
 
-    border: 1px solid $border-color;
+    font-size: 1.1rem;
 
-    border-radius: $radius-md;
+    font-weight: 700;
 
-    padding: 24px 28px;
+    color: $secondary-color;
+  }
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  &__desc {
+    margin-top: 6px;
 
-    h3 {
-      font-size: 1.3rem;
+    max-width: 220px;
 
-      color: $secondary-color;
+    font-size: 0.92rem;
 
-      margin-bottom: 8px;
-    }
+    line-height: 1.6;
 
-    p {
-      color: $text-light;
+    color: $text-light;
+  }
 
-      line-height: 1.7;
-    }
+  &:hover .process-step__node {
+    border-color: $primary-color;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 768px) {
   .process__timeline {
-    padding-left: 0;
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    gap: 0;
   }
 
-  .process__line {
-    left: calc(50% - 1px);
-  }
+  // Dashed connector between adjacent nodes
+  .process-step:not(:last-child)::after {
+    content: "";
 
-  .process-step {
-    display: flex;
+    position: absolute;
 
-    padding-bottom: 56px;
+    top: calc(#{$node-size} / 2);
 
-    &__node {
-      left: 50%;
+    left: 50%;
 
-      transform: translateX(-50%);
+    width: 100%;
 
-      width: 48px;
+    border-top: 2px dashed $border-color;
 
-      height: 48px;
-    }
-
-    &__card {
-      width: calc(50% - 48px);
-    }
-
-    &--left {
-      justify-content: flex-start;
-
-      .process-step__card {
-        text-align: right;
-      }
-    }
-
-    &--right {
-      justify-content: flex-end;
-    }
+    z-index: 0;
   }
 }

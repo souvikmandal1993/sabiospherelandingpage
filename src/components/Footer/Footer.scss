@@ -3,129 +3,88 @@
 .footer {
   background: $white;
 
-  border-top: 1px solid $border-color;
+  // ---- Upper footer: CTA banner (portal-themed dark) ----
+  &__cta {
+    background:
+      radial-gradient(
+        circle at 82% 18%,
+        rgba(200, 169, 126, 0.16),
+        transparent 42%
+      ),
+      radial-gradient(
+        circle at 8% 90%,
+        rgba(200, 169, 126, 0.1),
+        transparent 40%
+      ),
+      linear-gradient(135deg, #1c1c1f, $secondary-color);
 
-  padding-top: 72px;
-
-  &__top {
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    gap: 48px;
-
-    padding-bottom: 56px;
+    text-align: center;
   }
 
-  &__name {
-    font-size: 1.8rem;
+  &__cta-inner {
+    padding: 64px 0;
+  }
 
-    font-family: "Cormorant Garamond", serif;
+  &__cta-title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
 
-    letter-spacing: 1px;
+    line-height: 1.2;
+
+    color: $white;
+
+    margin-bottom: 16px;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__cta-subtitle {
+    font-size: 1.05rem;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    margin-bottom: 32px;
+  }
+
+  &__cta-btn {
+    display: inline-block;
+
+    padding: 16px 40px;
+
+    border-radius: 999px;
+
+    background: $primary-color;
 
     color: $secondary-color;
 
-    margin-bottom: 16px;
-  }
+    font-size: 0.92rem;
 
-  &__logo {
-    height: 44px;
+    font-weight: 700;
 
-    width: auto;
+    letter-spacing: 1px;
 
-    margin-bottom: 16px;
-  }
+    text-transform: uppercase;
 
-  &__brand p {
-    color: $text-light;
+    transition: $transition;
 
-    line-height: 1.7;
+    &:hover {
+      background: $primary-dark;
 
-    max-width: 340px;
+      color: $white;
 
-    margin-bottom: 22px;
-  }
-
-  &__socials {
-    display: flex;
-
-    gap: 12px;
-
-    a {
-      width: 38px;
-
-      height: 38px;
-
-      border-radius: 50%;
-
-      background: $background-color;
-
-      color: $primary-dark;
-
-      display: grid;
-
-      place-items: center;
-
-      transition: $transition;
-
-      img {
-        width: 18px;
-
-        height: 18px;
-      }
-
-      &:hover {
-        background: $primary-color;
-
-        color: $white;
-
-        transform: translateY(-2px);
-      }
+      transform: translateY(-3px);
     }
   }
 
-  &__columns {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 36px 24px;
-  }
-
-  &__column {
-    h4 {
-      font-size: 1rem;
-
-      color: $secondary-color;
-
-      margin-bottom: 16px;
-    }
-
-    ul {
-      list-style: none;
-
-      display: flex;
-
-      flex-direction: column;
-
-      gap: 12px;
-    }
-
-    a {
-      color: $text-light;
-
-      font-size: 0.95rem;
-
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
-
+  // ---- Lower footer: copyright + contact bar ----
   &__bottom {
+    background: $white;
+
+    border-top: 1px solid $border-color;
+  }
+
+  &__bottom-inner {
     display: flex;
 
     flex-direction: column;
@@ -133,14 +92,12 @@
     gap: 16px;
 
     padding: 26px 0;
-
-    border-top: 1px solid $border-color;
   }
 
   &__copyright {
-    color: $text-light;
+    font-size: 0.92rem;
 
-    font-size: 0.9rem;
+    color: $text-color;
   }
 
   &__contact {
@@ -148,9 +105,15 @@
 
     flex-wrap: wrap;
 
-    gap: 24px;
+    gap: 28px;
 
     a {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
       color: $text-color;
 
       font-size: 0.92rem;
@@ -159,6 +122,12 @@
 
       transition: color 0.3s ease;
 
+      svg {
+        width: 18px;
+
+        height: 18px;
+      }
+
       &:hover {
         color: $primary-color;
       }
@@ -166,18 +135,8 @@
   }
 }
 
-@media (min-width: 700px) {
-  .footer__columns {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .footer__top {
-    grid-template-columns: 1.2fr 2fr;
-  }
-
-  .footer__bottom {
+@media (min-width: 768px) {
+  .footer__bottom-inner {
     flex-direction: row;
 
     align-items: center;

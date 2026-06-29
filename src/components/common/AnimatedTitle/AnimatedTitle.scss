@@ -9,4 +9,8 @@
 
   // keep the blur from being clipped by the inline box
   will-change: transform, filter, opacity;
+
+  &--accent {
+    color: #c8a97e;
+  }
 }

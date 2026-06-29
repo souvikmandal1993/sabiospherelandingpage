@@ -22,7 +22,7 @@ const Principal = ({ data }) => {
             className="principal__content"
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
           >
             <AnimatedTitle as="h2" className="principal__title" text={data.title} />
@@ -37,19 +37,19 @@ const Principal = ({ data }) => {
               <cite>— {data.quoteAuthor}</cite>
             </blockquote>
 
-            {data.cta && (
+            {/* {data.cta && (
               <a href={data.ctaHref || "#about"} className="principal__cta">
                 {data.cta}
                 <span aria-hidden="true">→</span>
               </a>
-            )}
+            )} */}
           </motion.div>
 
           <motion.div
             className="principal__image"
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.8 }}
           >
             <img src={images[data.image] || data.image} alt={data.name} />

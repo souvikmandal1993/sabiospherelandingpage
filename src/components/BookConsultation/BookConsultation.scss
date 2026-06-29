@@ -1,0 +1,57 @@
+@use "../../styles/variables" as *;
+
+.book-consultation {
+  background: $background-color;
+
+  &__inner {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  &__title {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+
+    color: $secondary-color;
+
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 1.1rem;
+
+    line-height: 1.75;
+
+    color: $text-color;
+
+    margin-bottom: 36px;
+  }
+
+  &__cta {
+    display: inline-block;
+
+    padding: 16px 36px;
+
+    border-radius: 999px;
+
+    background: $primary-color;
+
+    color: $white;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+    transition: $transition;
+
+    &:hover {
+      transform: translateY(-2px);
+
+      background: $primary-dark;
+    }
+  }
+}

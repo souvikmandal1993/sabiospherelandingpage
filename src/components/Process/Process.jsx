@@ -22,48 +22,21 @@ const Process = ({ data }) => {
         </div>
 
         <div className="process__timeline">
-          <motion.span
-            className="process__line"
-            initial={{ scaleY: 0 }}
-            whileInView={{ scaleY: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          />
-
           {data.steps.map((item, index) => (
-            <div
+            <motion.div
               key={item.step}
-              className={`process-step process-step--${
-                index % 2 === 0 ? "left" : "right"
-              }`}
+              className="process-step"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false }}
+              transition={{ delay: index * 0.12, duration: 0.5 }}
             >
-              <motion.span
-                className="process-step__node"
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{
-                  delay: index * 0.15,
-                  type: "spring",
-                  stiffness: 260,
-                  damping: 18,
-                }}
-              >
-                {item.step}
-              </motion.span>
+              <span className="process-step__node">{item.step}</span>
 
-              <motion.div
-                className="process-step__card"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15 + 0.1, duration: 0.6 }}
-              >
-                <h3>{item.title}</h3>
+              <h3 className="process-step__title">{item.title}</h3>
 
-                <p>{item.description}</p>
-              </motion.div>
-            </div>
+              <p className="process-step__desc">{item.description}</p>
+            </motion.div>
           ))}
         </div>
       </Container>
